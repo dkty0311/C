@@ -9,7 +9,9 @@ int main()
 		char author[20];
 	};
 
-	struct book* a;
+	struct book s1 = { 1,"바람과 함께 사라지다","마가렛 미첼" };
 
-	a=&
+	printf("%d %s %s", s1.id,s1.author,s1.title);
+
+	
 }
