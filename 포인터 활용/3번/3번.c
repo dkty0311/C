@@ -1,12 +1,23 @@
 #include <stdio.h>
 
-void ptr_str_array(char **dp,int n)
+double get_average(int list[],int n)
 {
+	int sum = 0;
 
+	for (int i = 0; i < n; i++)
+	{
+		sum += list[i];
+	}
+
+	printf("%d\n", sum);
 }
 
 int main()
 {
-	char a[3][20] = { { "Àå°æ¼ö" }, { "ÀÌÀçÈ¯" }, { "±è»óÈÆ" } };
-	ptr_str_array(&a,);
+	int score[3][3] = { { 1,2,3 }, { 5,40,13 }, { 8,5,3 } };
+
+	for (int i = 0; i < 3; i++)
+	{
+		get_average(score, 3);
+	}
 }
